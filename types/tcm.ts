@@ -16,6 +16,7 @@ export interface TCMPoint {
   code: string;
   name: string;
   locationText: string;
+  imageUrl?: string;
   benefits: string[];
   stimulation: StimulationMethod[];
   isLocked: boolean;
@@ -32,4 +33,28 @@ export interface Meridian {
   description: string;
   peakTime: string;
   points: TCMPoint[];
+}
+
+export interface Therapist {
+  id: string;
+  name: string;
+  specialty: string;
+  location: string;
+  bio: string;
+  imageUrl: string;
+  website?: string;
+}
+
+export interface Therapist {
+  id: string;
+  name: string;
+  specialty: string;
+  location: string;
+  bio: string;
+  rating: number;
+  experience: string; // e.g. "10 years"
+  imageUrl: string;
+  phone: string;
+  email: string;
+  website?: string;
 }
